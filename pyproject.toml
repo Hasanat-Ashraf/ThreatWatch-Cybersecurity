@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=65"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "threatwatch"
+version = "1.0.0"
+description = "Offline cybersecurity threat detection from normalized authentication and HTTP logs"
+requires-python = ">=3.10"
+
+[project.scripts]
+threatwatch = "threatwatch.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["threatwatch*"]
